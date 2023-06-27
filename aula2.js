@@ -16,10 +16,10 @@ const nota3 = 5;
 const media = (nota1 + nota2 + nota3)/3;
 console.log(media);
 
-if (media <=5){
+if (media < 5){ 
     console.log('Você está reprovado');
 }
-else if (media <=7) {
+else if (media < 7) {
     console.log('Você está de recuperação');
 }
 else {
