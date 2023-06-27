@@ -10,16 +10,16 @@ Classificação:
 - Média acima de 7, passou de semestre;
 */
 
-const nota1 = 8;
-const nota2 = 8;
-const nota3 = 5;
+const nota1 = 7;
+const nota2 = 7;
+const nota3 = 8;
 const media = (nota1 + nota2 + nota3)/3;
 console.log(media);
 
 if (media < 5){ 
     console.log('Você está reprovado');
 }
-else if (media < 7) {
+else if (media <= 7) {
     console.log('Você está de recuperação');
 }
 else {
