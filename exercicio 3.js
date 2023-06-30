@@ -9,15 +9,17 @@
     - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 */
 
+
+
 const pagamento = 100;
 const AvistaDebito = pagamento * 0.9;
 const DinheiroPix = pagamento * 0.85;
 const DuasVezes = pagamento * 0.1;
-const FormaPag = 3;
+const FormaPag = 1;
 
 
 if (FormaPag === 1) {
-console.log(AvistaDebito);
+console.log(AplicarDesconto(AvistaDebito));
 }
 
 else if (FormaPag === 2) {  
@@ -28,8 +30,26 @@ else if (FormaPag === 3) {
     console.log(pagamento);
 }
 
-else if (FormaPag === 4){
+else if (FormaPag === 4) {
     console.log (DuasVezes + pagamento);
 }
+
+
+
+
+function AplicarDesconto(valor, tipoDePagamento) {
+    if (tipoDePagamento == 1) {
+        return valor * 0.9;
+    } else if (tipoDePagamento == 2) {
+        return valor * 0.85;
+    } else if (tipoDePagamento == 3) {
+        return valor * 0.1;
+    } else if (tipoDePagamento == 4) {
+        return valor * 0.1 + valor;
+    }
+}
+
+console.log(AplicarDesconto(100,4))
+   
 
 
