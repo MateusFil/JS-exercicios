@@ -19,7 +19,7 @@ const FormaPag = 1;
 
 
 if (FormaPag === 1) {
-console.log(AplicarDesconto(AvistaDebito));
+console.log((AvistaDebito));
 }
 
 else if (FormaPag === 2) {  
@@ -43,13 +43,13 @@ function AplicarDesconto(valor, tipoDePagamento) {
     } else if (tipoDePagamento == 2) {
         return valor * 0.85;
     } else if (tipoDePagamento == 3) {
-        return valor * 0.1;
+        return valor;
     } else if (tipoDePagamento == 4) {
         return valor * 0.1 + valor;
     }
 }
 
-console.log(AplicarDesconto(100,4))
+console.log(AplicarDesconto(100,3))
    
 
 
